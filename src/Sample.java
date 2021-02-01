@@ -46,33 +46,4 @@ public class Sample extends HttpServlet {
 			req.include(request, response);
 		}
 	}
-
-	protected String createHTML(String methodType) {
-		StringBuffer sb = new StringBuffer();
-
-		sb.append("<html>");
-		sb.append("<head>");
-		sb.append("<title>サンプル</title>");
-		sb.append("</head>");
-		sb.append("<body>");
-
-		sb.append("<p>");
-		sb.append(methodType);
-		sb.append("メソッドで呼び出されました</p>");
-
-		sb.append("<p><a href='Sample'>リンク</a></p>");
-
-		sb.append("<form action='Sample' method='get'>");
-		sb.append("<input type='submit' value='GETで送信'>");
-		sb.append("</form>");
-
-		sb.append("<form action='Sample' method='post'>");
-		sb.append("<input type='submit' value='POSTで送信'>");
-		sb.append("</form>");
-
-		sb.append("</body>");
-		sb.append("</html>");
-
-		return (new String(sb));
-	}
 }
