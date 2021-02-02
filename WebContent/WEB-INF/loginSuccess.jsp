@@ -5,8 +5,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>COMFIRM Page</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
-<h1>buzz-buzz Hello Admin san</h1>
+<h2>Hello Admin san</h2>
+<p id="load">now loading</p>
+<ul id="area">
+</ul>
+<script src="/spring_learning/js/getService.js"></script>
 </body>
 </html>
